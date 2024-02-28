@@ -2,7 +2,7 @@
 
 $white: rgb(255, 255, 255);
 $acctent-color: rgb(26, 20, 35);
-$card-color: rgb(242, 242, 242);
+$card-color: rgb(235, 235, 235);
 
 body {
   background-color: $white;
@@ -12,9 +12,10 @@ body {
 }
 
 .container {
+  overflow: hidden;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: red;
+  background-color: $card-color;
 }
 
 // .goblin-one-regular {

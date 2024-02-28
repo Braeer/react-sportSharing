@@ -1,3 +1,7 @@
+$white: rgb(255, 255, 255);
+$acctent-color: rgb(26, 20, 35);
+$card-color: rgb(242, 242, 242);
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,4 +9,90 @@
   padding: 0 15px;
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: $acctent-color 5px solid;
+}
+
+.logo {
+  font-size: 75px;
+  font-weight: 700;
+  color: $acctent-color;
+  text-decoration: none;
+  font-family: 'Goblin One', serif;
+}
+.container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  ul {
+    display: flex;
+    li {
+      font-size: 20px;
+      font-weight: 600;
+      margin-right: 20px;
+      width: 150px;
+      height: 50px;
+      line-height: 44px;
+      background-color: $acctent-color;
+      text-align: center;
+      border: 3px solid $acctent-color;
+      border-radius: 15px;
+      cursor: pointer;
+
+      a {
+        color: $white;
+      }
+
+      &:hover {
+        background-color: $white;
+        a {
+          color: $acctent-color;
+        }
+      }
+    }
+  }
+}
+.authorization {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sing_in {
+  border: 3px solid $acctent-color;
+  border-radius: 15px;
+  display: block;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+  line-height: 44px;
+  margin-right: 20px;
+  background-color: $white;
+  color: $acctent-color;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: $acctent-color;
+    color: $white;
+  }
+}
+.sing_up {
+  border: 3px solid $acctent-color;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  line-height: 44px;
+  background-color: $acctent-color;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $acctent-color;
+  }
 }
