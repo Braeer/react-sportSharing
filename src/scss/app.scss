@@ -3,26 +3,120 @@
 $white: rgb(255, 255, 255);
 $acctent-color: rgb(26, 20, 35);
 $card-color: rgb(235, 235, 235);
+$black: rgb(0, 0, 0);
 
 body {
-  background-color: $white;
+  background-color: white;
 }
-*{
-  font-family: "Martian Mono", monospace;
+* {
+  font-family: 'Martian Mono', monospace;
 }
 
 .container {
   overflow: hidden;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: $card-color;
 }
+.main__title-h1 {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 
-// .goblin-one-regular {
-//   font-family: "Goblin One", serif;
-//   font-weight: 400;
-//   font-style: normal;
-// }
+  h1 {
+    line-height: 350px;
+    font-size: 400px;
+    font-weight: 400;
+    font-family: 'League Gothic', sans-serif;
+  }
+}
+.main__section-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  padding-top: 20px;
+
+  .main__section-description__title {
+    padding: 30px 40px;
+    margin-top: 20px;
+    width: 50%;
+
+    h2 {
+      font-size: 40px;
+      color: $white;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  .main__section-description__img {
+    width: 40%;
+    img {
+      background-color: #fff;
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+.main__section-about {
+  h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+
+  .main__section-about__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .main__section-about__card {
+      width: 60%;
+      height: 400px;
+      background-color: $card-color;
+      border-radius: 20px;
+      margin: 20px 20px;
+
+      // margin-right: 20px;
+      // margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+      padding: 20px;
+      color: $black;
+    }
+
+    p {
+      font-size: 20px;
+      padding: 0 20px;
+      color: $black;
+    }
+
+    .main__section-about__card-1 {
+      
+    }
+    .main__section-about__card-2 {
+      width: 30%;
+    }
+    .main__section-about__card-3 {
+
+    }
+    .main__section-about__card-4 {
+
+    }
+
+  }
+}
 
 // .martian-mono-<uniquifier> {
 //   font-family: "Martian Mono", monospace;
