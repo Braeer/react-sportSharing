@@ -1,27 +1,34 @@
 import React from 'react';
 
 import style from './styleHeader.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
       <div className={style.header}>
-        <a className={style.logo} href="">Sport Sharing</a>
+        <Link to="/" className={style.logo}>
+          SportSharing
+        </Link>
         <div className={style.container}>
           <nav className={style.menu}>
             <ul>
-              <li><a href="#">Cars</a></li>
-              <li><a href="#">About</a></li>
+              <li>
+                <Link to="/">Cars</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
             </ul>
           </nav>
           <div className={style.authorization}>
-            <a className={style.sing_in} href="#">Sing in</a>
-            <a className={style.sing_up} href="#">Sing up</a>
+            <Link className={style.sing_in}>Sing in</Link>
+            <Link className={style.sing_up}>Sing up</Link>
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 };
 
 export default Header;
