@@ -1,4 +1,5 @@
 import React from 'react';
+import Reviews from '../components/reviews';
 
 const Main = () => {
   return (
@@ -29,6 +30,8 @@ const Main = () => {
           <img src="" alt="" />
         </div>
       </section>
+
+
 
       <section className="main__section-about">
         <h1>Наши приоритеты</h1>
@@ -65,6 +68,14 @@ const Main = () => {
             <img src="" alt="" />
           </div>
           
+        </div>
+      </section>
+
+
+      <section className='main__section-reviews'>
+        <h1>Отзывы</h1>
+        <div className='main__section-reviews__cards'>
+          <Reviews />
         </div>
       </section>
     </div>

@@ -1,0 +1,43 @@
+$card-color: rgb(235, 235, 235);
+
+.main__section_reviews__card {
+  width: 33%;
+  height: 400px;
+  background-color: $card-color;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+.main__section_reviews__card_rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.main__section_reviews__card_title {
+  display: flex;
+
+  h2 {
+    margin: 20px;
+    height: 80px;
+    color: black;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+}
+.main__section_reviews__card_text {
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 5px;
+  margin-top: 20px;
+  width: 360px;
+  height: 200px; 
+  overflow-y: scroll;
+
+}
