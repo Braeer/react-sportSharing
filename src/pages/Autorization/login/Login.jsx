@@ -1,9 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   return (
     <>
-      <h2>Login Page!!!</h2>
+      <h1>Login</h1>
+      <p>
+        Or
+        <Link to="/sign-up">ЗАРЕГИСТРИРУЙСЯ</Link>
+      </p>
     </>
   );
 };
