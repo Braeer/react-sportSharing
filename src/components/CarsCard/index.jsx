@@ -6,7 +6,7 @@ const CarsCard = () => {
   return (
     <>
       <div className={styles.cars}>
-        <div className="up">
+        <div className={styles.up}>
           <div className={styles.text__section}>
             <h1>Машина</h1>
             <h2>Описание машины</h2>
@@ -25,13 +25,13 @@ const CarsCard = () => {
               <li>6</li>
             </ul>
           </div>
-          <img src="" alt="" />
+          <img src="./img/f1-1384580934.jpg" alt="" />
         </div>
         <div className={styles.line}></div>
         <div className={styles.down}>
           <div className={styles.price}>19999₽</div>
           <div className={styles.status}>Свободно</div>
-          <div><button>Забронировать</button></div>
+          <button>Забронировать</button>
         </div>
       </div>
     </>
