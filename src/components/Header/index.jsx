@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import style from './styleHeader.module.scss';
-import { Link } from 'react-router-dom';
+import style from "./styleHeader.module.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -22,8 +22,12 @@ const Header = () => {
             </ul>
           </nav>
           <div className={style.authorization}>
-            <Link className={style.sing_in}>Sing in</Link>
-            <Link className={style.sing_up}>Sing up</Link>
+            <Link to="/sign-in" className={style.sing_in}>
+              Sing in
+            </Link>
+            <Link to="/sign-up" className={style.sing_up}>
+              Sing up
+            </Link>
           </div>
         </div>
       </div>
