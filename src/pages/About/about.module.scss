@@ -4,14 +4,13 @@ $card-color: rgb(242, 242, 242);
 
 
 .about {
-  width: 80%;
-  background-color: $card-color;
+  height: 62vh;
+  width: 100%;
   border-radius: 15px;
   margin: 0 auto;
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: $acctent-color 5px solid;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 
   h1 {
     font-size: 32px;
