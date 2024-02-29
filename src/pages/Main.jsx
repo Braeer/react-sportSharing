@@ -88,7 +88,7 @@ const Main = () => {
     
       <Footer />
     
-      <Navigate to="/sign-in" />
+      {/* <Navigate to="/sign-in" /> */}
 
     </div>
   );
