@@ -73,6 +73,7 @@ body {
 }
 
 .main__section-about {
+  margin-bottom: 50px;
   h1 {
     font-size: 50px;
     margin-bottom: 50px;
@@ -89,7 +90,7 @@ body {
       height: 400px;
       background-color: $card-color;
       border-radius: 20px;
-      margin: 20px 20px;
+      margin: 20px 2%;
 
       // margin-right: 20px;
       // margin-bottom: 20px;
@@ -110,10 +111,10 @@ body {
     .main__section-about__card-1 {
     }
     .main__section-about__card-2 {
-      width: 34%;
+      width: 32%;
     }
     .main__section-about__card-3 {
-      width: 34%;
+      width: 32%;
     }
     .main__section-about__card-4 {
     }
@@ -135,7 +136,41 @@ body {
     flex-wrap: wrap;
     padding: 0 20px;
     justify-content: space-between;
+  }
+}
 
+.main__section-ready-now {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 80px;
+
+  h1 {
+    font-size: 50px;
+    padding: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    padding: 0 10px;
+    opacity: 0.7;
+  }
+
+  .main__section-ready-now__button {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
   }
 }
 
