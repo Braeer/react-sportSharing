@@ -15,7 +15,8 @@ $card-color: rgb(235, 235, 235);
   margin-top: 20px;
 }
 .main__section_reviews__card_title {
-  display: flex;
+  // display: flex;
+  position: relative;
 
   h2 {
     margin: 20px;
@@ -23,8 +24,11 @@ $card-color: rgb(235, 235, 235);
     color: black;
   }
   img {
-    width: 70px;
-    height: 70px;
+    left: 75%;
+    top: 0%;
+    position: absolute;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: black;
   }
@@ -36,8 +40,8 @@ $card-color: rgb(235, 235, 235);
   margin: 20px auto;
   padding: 5px;
   margin-top: 20px;
-  width: 360px;
-  height: 200px; 
+  width: 90%;
+  height: 60%; 
   overflow-y: scroll;
 
 }

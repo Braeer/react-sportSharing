@@ -5,6 +5,11 @@ $acctent-color: rgb(26, 20, 35);
 $card-color: rgb(235, 235, 235);
 $black: rgb(0, 0, 0);
 
+//Fonts
+//   font-family: "Martian Mono", monospace;
+
+
+
 body {
   background-color: white;
 }
@@ -174,11 +179,12 @@ body {
   }
 }
 
-// .martian-mono-<uniquifier> {
-//   font-family: "Martian Mono", monospace;
-//   font-optical-sizing: auto;
-//   font-weight: <weight>;
-//   font-style: normal;
-//   font-variation-settings:
-//     "wdth" 100;
-// }
+
+//Cars
+
+.cars__title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
