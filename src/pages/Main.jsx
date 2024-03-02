@@ -1,7 +1,7 @@
 import React from "react";
 import Reviews from "../components/reviews";
 import { Navigate } from "react-router-dom";
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
 
 const Main = () => {
   return (
@@ -79,17 +79,16 @@ const Main = () => {
           <Reviews />
         </div>
       </section>
-    
-      <section className='main__section-ready-now'>
+
+      <section className="main__section-ready-now">
         <h1>Готовы начать?</h1>
         <p>Начните сейчас и получите скидку</p>
-        <button className='main__section-ready-now__button'>Начать</button>
+        <button className="main__section-ready-now__button">Начать</button>
       </section>
-    
-      <Footer />
-    
-      <Navigate to="/sign-in" />
 
+      <Footer />
+
+      {/* <Navigate to="/sign-in" /> */}
     </div>
   );
 };
