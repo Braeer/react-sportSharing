@@ -4,7 +4,7 @@ $card-color: rgb(242, 242, 242);
 
 
 .about {
-  height: 62vh;
+  height: 60%;
   width: 100%;
   border-radius: 15px;
   margin: 0 auto;
@@ -41,4 +41,9 @@ $card-color: rgb(242, 242, 242);
   text-align: center;
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .text {
+    width: 95%;
+  }
 }

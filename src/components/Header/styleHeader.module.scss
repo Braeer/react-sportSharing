@@ -75,7 +75,6 @@ $card-color: white;
   color: $acctent-color;
   cursor: pointer;
 
-
   &:hover {
     background-color: $acctent-color;
     color: $white;
@@ -95,5 +94,47 @@ $card-color: white;
   &:hover {
     background-color: $white;
     color: $acctent-color;
+  }
+}
+@media (max-width: 1200px) {
+  .authorization {
+    flex-direction: column;
+
+    a {
+      margin: 5px;
+    }
+  }
+  .menu {
+    ul {
+      flex-direction: column;
+
+      li {
+        margin: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .menu {
+    ul {
+      margin-top: 20px;
+      align-items: center;
+      flex-direction: column;
+
+      li {
+        margin: 10px;
+      }
+    }
+  }
+  .authorization {
+    a {
+      margin: 10px;
+    }
   }
 }

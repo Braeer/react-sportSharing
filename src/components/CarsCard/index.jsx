@@ -5,7 +5,7 @@ import styles from './styleCarsCard.module.scss';
 const CarsCard = () => {
   return (
     <>
-      <div className={styles.cars}>
+      <footer className={styles.cars}>
         <div className={styles.up}>
           <div className={styles.text__section}>
             <h1>Машина</h1>
@@ -17,12 +17,12 @@ const CarsCard = () => {
             </p>
             <h2>Характеристики</h2>
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
-              <li>6</li>
+              <li>Л.С.</li>
+              <li>Привод:</li>
+              <li>Шины:</li>
+              <li>Вес:</li>
+              <li>0-100км/ч:</li>
+              <li>Крутящий момент:</li>
             </ul>
           </div>
           <img src="./img/f1-1384580934.jpg" alt="" />
@@ -33,7 +33,7 @@ const CarsCard = () => {
           <div className={styles.status}>Свободно</div>
           <button>Забронировать</button>
         </div>
-      </div>
+      </footer>
     </>
   );
 };
