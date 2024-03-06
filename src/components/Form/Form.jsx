@@ -1,11 +1,11 @@
 import { React, useState } from "react";
-import "./form.module.scss";
+import styles from "./form.module.scss";
 
 const Form = ({ title, handleClick }) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   return (
-    <div>
+    <div className="form-wrapper">
       <input
         type="email"
         value={email}
@@ -19,7 +19,12 @@ const Form = ({ title, handleClick }) => {
         onChange={(e) => setPass(e.target.value)}
         placeholder="password"
       />
-      <button onClick={() => handleClick(email, pass)}>{title}</button>
+      <button
+        className="submit-button"
+        onClick={() => handleClick(email, pass)}
+      >
+        {title}
+      </button>
     </div>
   );
 };

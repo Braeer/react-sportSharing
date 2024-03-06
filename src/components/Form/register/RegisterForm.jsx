@@ -9,7 +9,7 @@ const RegisterForm = () => {
   const dispatch = useDispatch();
 
   const handleRegister = (email, password) => {
-    const auth = getAuth;
+    const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then(console.log)
       .catch(console.error);
