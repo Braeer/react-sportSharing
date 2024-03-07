@@ -1,17 +1,12 @@
 import React from "react";
-import "./register.module.scss";
-import { Link } from "react-router-dom";
+import styles from "./register.module.scss";
 import RegisterForm from "../../../components/Form/register/RegisterForm";
 
 const RegisterPage = () => {
   return (
-    <>
-      <h2>Registration page!!!</h2>
+    <div className={styles.register_ground}>
       <RegisterForm />
-      <p>
-        Already have account <Link to="/sign-in">Login</Link>
-      </p>
-    </>
+    </div>
   );
 };
 

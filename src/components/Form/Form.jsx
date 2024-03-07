@@ -1,11 +1,15 @@
 import { React, useState } from "react";
 import styles from "./form.module.scss";
 
+import { Link } from "react-router-dom";
+
 const Form = ({ title, handleClick }) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   return (
-    <div className="form-wrapper">
+    <div className={styles.form_wrapper}>
+      <h2>{title}</h2>
+
       <input
         type="email"
         value={email}
@@ -25,6 +29,16 @@ const Form = ({ title, handleClick }) => {
       >
         {title}
       </button>
+
+      <p>
+        {
+          <p>
+            <Link to={`/${title == "Login" ? "sign-up" : "sign-in"}`}>
+              {title == "Login" ? "Зарегистрироваться" : "Войти"}
+            </Link>
+          </p>
+        }
+      </p>
     </div>
   );
 };
