@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import "./scss/app.scss";
 import LoginPage from "./pages/Autorization/login/Login.jsx";
 import RegisterPage from "./pages/Autorization/register/Register.jsx";
+import UserPage from "./pages/UserPage.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="sign-in" element={<LoginPage />} />
           <Route path="sign-up" element={<RegisterPage />} />
+          <Route path="user-page" element={<UserPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
