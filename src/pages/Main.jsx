@@ -1,16 +1,14 @@
-import React from "react";
-import Reviews from "../components/reviews";
-import { Navigate } from "react-router-dom";
-import Footer from "../components/Footer";
-import { useAuth } from "../hooks/use-auth";
-import { useDispatch } from "react-redux";
-import { removeUser } from "../redux/slices/userSlice";
+import React from 'react';
+import Reviews from '../components/reviews';
+import { Navigate } from 'react-router-dom';
+import Footer from '../components/Footer';
+import { useAuth } from '../hooks/use-auth';
 
 const Main = () => {
+  
   const { isAuth, email } = useAuth();
-  const dispatch = useDispatch();
 
-  return isAuth ? (
+  return (
     <div>
       <div className="main__title-h1">
         <h1>Sport</h1>
@@ -21,25 +19,16 @@ const Main = () => {
       <section className="main__section-description">
         <div className="main__section-description__title">
           <h2>Кратко о нас</h2>
-          <button onClick={() => dispatch(removeUser())}>LogOut{email}</button>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae aliquam repellendus sapiente totam recusandae ipsa,
-            deserunt, a velit nulla porro explicabo similique vel laborum
-            corrupti reiciendis! Molestias perspiciatis dolorem dignissimos. Rem
-            reprehenderit officia earum, aspernatur quod itaque, voluptas
-            nesciunt magni dolores facilis id consectetur asperiores recusandae
-            minus sapiente illo aut. Obcaecati enim est quos, aliquam eum
-            molestias dolore libero magni sit rem consectetur magnam labore
-            itaque illum, nulla dignissimos officiis, dolores atque? Consequatur
-            natus, aut blanditiis nemo excepturi voluptate rem dicta labore
-            molestias doloribus. Possimus laborum maxime praesentium expedita
-            architecto eligendi aut voluptas molestias ab, quod fuga sequi error
-            vel!
+            🏎️ Наслаждайтесь адреналином и скоростью на нашем треке с прокатом спортивных
+            автомобилей! Выбирайте из широкого выбора мощных автомобилей, чтобы почувствовать их
+            динамику и профессиональную подготовку. Опыт вождения на предельных скоростях станет для
+            вас незабываемым приключением. Доверьтесь нам и почувствуйте мощь спортивных
+            автомобилей! 🏎️🔥
           </p>
         </div>
         <div className="main__section-description__img">
-          <img src="" alt="" />
+          <img src="/img/MainCar.jpg" alt="" />
         </div>
       </section>
 
@@ -48,44 +37,56 @@ const Main = () => {
         <div className="main__section-about__cards">
           <div className="main__section-about__card main__section-about__card-1">
             <div>
-              <h2>Низкая цена</h2>
-              <p>Приоритет 1</p>
+              <h2>Разнообразие автомобилей</h2>
+              <p>
+                Мы предлагаем широкий выбор спортивных автомобилей различных марок и моделей, что
+                позволяет каждому клиенту выбрать автомобиль по своему вкусу и предпочтениям.
+              </p>
             </div>
-            <img src="" alt="" />
           </div>
 
           <div className="main__section-about__card main__section-about__card-2">
             <div>
-              <h2>Низкая цена</h2>
-              <p>Приоритет 1</p>
+              <h2>Профессиональная подготовка</h2>
+              <p>
+                Наши автомобили проходят регулярную техническую проверку и обслуживание, чтобы
+                гарантировать безопасность и комфорт во время вождения. Наши инструкторы также
+                обладают высоким уровнем профессионализма и опыта, что делает ваше вождение еще
+                более приятным.
+              </p>
             </div>
-            <img src="" alt="" />
           </div>
 
           <div className="main__section-about__card main__section-about__card-3">
             <div>
-              <h2>Низкая цена</h2>
-              <p>Приоритет 1</p>
+              <h2>Гибкий график</h2>
+              <p>
+                Мы предлагаем возможность аренды спортивных автомобилей на различные сроки – от
+                нескольких часов до нескольких дней, что позволяет нашим клиентам выбирать
+                оптимальное время для наслаждения вождением.
+              </p>
             </div>
-            <img src="" alt="" />
           </div>
 
           <div className="main__section-about__card main__section-about__card-4">
             <div>
-              <h2>Низкая цена</h2>
-              <p>Приоритет 1</p>
+              <h2>Уникальный трек</h2>
+              <p>
+                Наш трек специально разработан для максимального комфорта и безопасности вождения
+                спортивных автомобилей. Он предоставляет возможность испытать все возможности
+                автомобиля и насладиться адреналином на полную катушку.
+              </p>
             </div>
-            <img src="" alt="" />
           </div>
         </div>
       </section>
 
-      <section className="main__section-reviews">
+      {/* <section className="main__section-reviews">
         <h1>Отзывы</h1>
         <div className="main__section-reviews__cards">
           <Reviews />
         </div>
-      </section>
+      </section> */}
 
       <section className="main__section-ready-now">
         <h1>Готовы начать?</h1>
@@ -95,8 +96,6 @@ const Main = () => {
 
       <Footer />
     </div>
-  ) : (
-    <Navigate to="/sign-in" />
   );
 };
 
