@@ -1,15 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-import React from 'react';
-import Main from './pages/Main';
-import About from './pages/About/About';
-import NotFound from './pages/NotFound.jsx';
-import Cars from './pages/Cars';
+import { Routes, Route } from "react-router-dom";
+import React from "react";
+import Main from "./pages/Main";
+import About from "./pages/About/About";
+import NotFound from "./pages/NotFound.jsx";
+import Cars from "./pages/Cars";
 
-import Header from './components/Header';
+import Header from "./components/Header";
 
-import './scss/app.scss';
-import LoginPage from './pages/Autorization/login/Login.jsx';
-import RegisterPage from './pages/Autorization/register/Register.jsx';
+import "./scss/app.scss";
+import LoginPage from "./pages/Autorization/login/Login.jsx";
+import RegisterPage from "./pages/Autorization/register/Register.jsx";
 
 function App() {
   return (

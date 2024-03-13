@@ -1,18 +1,12 @@
 import React from "react";
-import "./login.module.scss";
-import { Link } from "react-router-dom";
+import styles from "./login.module.scss";
 import LoginForm from "../../../components/Form/login-form/LoginForm";
 
 const LoginPage = () => {
   return (
-    <>
-      <h1>Login</h1>
+    <div className={styles.form_ground}>
       <LoginForm />
-      <p>
-        Or
-        <Link to="/sign-up">ЗАРЕГИСТРИРУЙСЯ</Link>
-      </p>
-    </>
+    </div>
   );
 };
 

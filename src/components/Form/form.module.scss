@@ -1,0 +1,52 @@
+$white: rgb(255, 255, 255);
+$acctent-color: rgb(26, 20, 35);
+$card-color: rgb(235, 235, 235);
+$black: rgb(0, 0, 0);
+
+.form_wrapper {
+  width: 40vw;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: rgb(165, 165, 165);
+
+  border: 1px solid grey;
+  border-radius: 10px;
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border: 1px solid white;
+    }
+    &:active {
+      color: rgb(228, 179, 32);
+    }
+  }
+  input {
+    width: 80%;
+    height: 40px;
+
+    margin-top: 20px;
+    border: 1px solid white;
+
+    &::placeholder {
+      color: rgb(228, 179, 32);
+    }
+  }
+}
