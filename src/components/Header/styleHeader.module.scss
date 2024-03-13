@@ -22,6 +22,51 @@ $card-color: white;
   text-decoration: none;
   font-family: 'Goblin One', serif;
 }
+.user {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin: 0 20px;
+    border: 3px solid $acctent-color;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 44px;
+    background-color: $acctent-color;
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $white;
+      color: $acctent-color;
+    }
+  }
+
+  button {
+    border: 3px solid $acctent-color;
+    border-radius: 15px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 44px;
+    margin-right: 20px;
+    background-color: $white;
+    color: $acctent-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $acctent-color;
+      color: $white;
+    }
+  }
+}
 .container {
   width: 60%;
   display: flex;
@@ -113,6 +158,17 @@ $card-color: white;
       }
     }
   }
+  .user {
+    flex-direction: column;
+
+    a {
+      margin: 5px;
+    }
+
+    button {
+      margin: 5px;
+    }
+  }
 }
 @media (max-width: 700px) {
   .container {
@@ -134,6 +190,15 @@ $card-color: white;
   }
   .authorization {
     a {
+      margin: 10px;
+    }
+  }
+  .user {
+    a {
+      margin: 10px;
+    }
+
+    button {
       margin: 10px;
     }
   }

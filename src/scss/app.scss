@@ -8,8 +8,6 @@ $black: rgb(0, 0, 0);
 //Fonts
 //   font-family: "Martian Mono", monospace;
 
-
-
 body {
   background-color: white;
 }
@@ -55,7 +53,7 @@ body {
   .main__section-description__title {
     padding: 30px 40px;
     margin-top: 20px;
-    width: 50%;
+    width: 40%;
 
     h2 {
       font-size: 40px;
@@ -68,11 +66,14 @@ body {
     }
   }
   .main__section-description__img {
-    width: 40%;
+    width: 50%;
+    margin: 10px;
+    height: 100%;
     img {
+      width: 100%;
+      height: 50vh;
       background-color: #fff;
-      width: 500px;
-      height: 500px;
+      border-radius: 10px;
     }
   }
 }
@@ -91,8 +92,8 @@ body {
     justify-content: space-between;
 
     .main__section-about__card {
-      width: 60%;
-      height: 400px;
+      padding: 30px;
+      width: 45%;
       background-color: $card-color;
       border-radius: 20px;
       margin: 20px 2%;
@@ -102,6 +103,7 @@ body {
     }
 
     h2 {
+      padding: 10px;
       font-size: 30px;
       padding: 20px;
       color: $black;
@@ -111,17 +113,6 @@ body {
       font-size: 20px;
       padding: 0 20px;
       color: $black;
-    }
-
-    .main__section-about__card-1 {
-    }
-    .main__section-about__card-2 {
-      width: 32%;
-    }
-    .main__section-about__card-3 {
-      width: 32%;
-    }
-    .main__section-about__card-4 {
     }
   }
 }
@@ -178,7 +169,6 @@ body {
     }
   }
 }
-
 
 //Cars
 

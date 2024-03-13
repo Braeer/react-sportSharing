@@ -10,20 +10,21 @@ const About = () => {
         <h1>О нас</h1>
         <div className={style.line}></div>
         <p className={style.text}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quasi minus magni
-          beatae unde eaque, rem esse dolorum tempore veniam repellendus, vitae ipsum quos iure
-          dignissimos maiores harum! Suscipit, animi labore? Quo, doloribus sed sunt sint rerum
-          placeat, impedit fugiat odio beatae facere, aliquam voluptatem adipisci? Atque dolore
-          dolorum nemo assumenda eaque temporibus? Amet dolores assumenda vitae eaque placeat
-          doloremque quibusdam deserunt incidunt ab et temporibus totam tenetur dolore sequi
-          molestiae eos, saepe ad nemo repudiandae! Mollitia quam accusamus pariatur saepe tempora,
-          autem odit veritatis libero temporibus dignissimos voluptates obcaecati, debitis ducimus.
-          Eveniet cupiditate velit itaque perferendis sed iusto! Quo perferendis necessitatibus
-          expedita officiis, voluptas vitae consectetur laudantium suscipit totam? Placeat,
-          obcaecati molestiae voluptatum recusandae nobis nam modi eos architecto iure repellat eius
-          dolore, qui tempore hic fugiat voluptatibus saepe unde! Omnis magni neque necessitatibus
-          nam ab qui deleniti eaque sit, commodi dolore soluta praesentium quis molestias vero vitae
-          officia.
+          🏎️ Добро пожаловать в наш уникальный сервис проката спортивных автомобилей! Мы предлагаем
+          вам возможность испытать адреналин и скорость, наслаждаясь управлением мощных спорткаров
+          на нашем специальном треке. Наш сервис сочетает в себе удовольствие от вождения и
+          возможность аренды спортивного трека для вашего полного комфорта. 🔥 Вам нравится ощущение
+          скорости и мощи? Тогда наши спортивные автомобили станут вашим идеальным выбором! Мы
+          предлагаем широкий выбор автомобилей, которые готовы порадовать вас своей динамикой и
+          профессиональным уровнем подготовки. Наши специалисты всегда готовы помочь вам выбрать
+          идеальный автомобиль для вашего вождения. 🏁 Наш сервис уникален тем, что мы предлагаем не
+          только аренду спортивных автомобилей, но и доступ к специальному треку, где вы сможете
+          полностью раскрыть потенциал выбранного автомобиля. Это уникальная возможность
+          почувствовать себя настоящим гонщиком и пройти через незабываемый опыт вождения на
+          предельных скоростях. 🚀 Доверьтесь нам, и мы сделаем все возможное, чтобы ваше вождение
+          стало ярким и захватывающим приключением! Наш профессионализм, безопасность и
+          индивидуальный подход к каждому клиенту делают наш сервис непревзойденным. Почувствуйте
+          мощь и энергию спортивных автомобилей вместе с нами! 🏎️🔥
         </p>
         <h2>Контакты</h2>
         <div className={style.line}></div>
