@@ -27,14 +27,14 @@ const Form = ({ title, handleClick }) => {
         className="submit-button"
         onClick={() => handleClick(email, pass)}
       >
-        {title}
+        {title === "Login" ? "Sign in" : "Sign up"}
       </button>
 
       <p>
         {
           <p>
-            <Link to={`/${title == "Login" ? "sign-up" : "sign-in"}`}>
-              {title == "Login" ? "Зарегистрироваться" : "Войти"}
+            <Link to={`/${title === "Login" ? "sign-up" : "sign-in"}`}>
+              {title === "Login" ? "Зарегистрироваться" : "Войти"}
             </Link>
           </p>
         }

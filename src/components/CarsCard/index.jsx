@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import styles from './styleCarsCard.module.scss';
+import styles from "./styleCarsCard.module.scss";
 
 const CarsCard = () => {
   return (
@@ -11,14 +11,15 @@ const CarsCard = () => {
             <h1>Машина</h1>
             <h2>Описание машины</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias explicabo,
-              distinctio, totam a beatae sapiente dolorem cumque dolor pariatur reprehenderit
-              nostrum placeat, qui ab deleniti quaerat officia ullam minus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              alias explicabo, distinctio, totam a beatae sapiente dolorem
+              cumque dolor pariatur reprehenderit nostrum placeat, qui ab
+              deleniti quaerat officia ullam minus?
             </p>
             <h2>Характеристики</h2>
             <ul>
-              <li>Л.С.</li>
-              <li>Привод:</li>
+              <li>пизда.</li>
+              <li>хуй:</li>
               <li>Шины:</li>
               <li>Вес:</li>
               <li>0-100км/ч:</li>

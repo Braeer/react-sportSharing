@@ -1,10 +1,16 @@
-import React from 'react';
-import Reviews from '../components/reviews';
-import { Navigate } from 'react-router-dom';
-import Footer from '../components/Footer';
+import React from "react";
+import Reviews from "../components/reviews";
+import { Navigate } from "react-router-dom";
+import Footer from "../components/Footer";
+import { useAuth } from "../hooks/use-auth";
+import { useDispatch } from "react-redux";
+import { removeUser } from "../redux/slices/userSlice";
 
 const Main = () => {
-  return (
+  const { isAuth, email } = useAuth();
+  const dispatch = useDispatch();
+
+  return isAuth ? (
     <div>
       <div className="main__title-h1">
         <h1>Sport</h1>
@@ -15,17 +21,21 @@ const Main = () => {
       <section className="main__section-description">
         <div className="main__section-description__title">
           <h2>Кратко о нас</h2>
+          <button onClick={() => dispatch(removeUser())}>LogOut{email}</button>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aliquam
-            repellendus sapiente totam recusandae ipsa, deserunt, a velit nulla porro explicabo
-            similique vel laborum corrupti reiciendis! Molestias perspiciatis dolorem dignissimos.
-            Rem reprehenderit officia earum, aspernatur quod itaque, voluptas nesciunt magni dolores
-            facilis id consectetur asperiores recusandae minus sapiente illo aut. Obcaecati enim est
-            quos, aliquam eum molestias dolore libero magni sit rem consectetur magnam labore itaque
-            illum, nulla dignissimos officiis, dolores atque? Consequatur natus, aut blanditiis nemo
-            excepturi voluptate rem dicta labore molestias doloribus. Possimus laborum maxime
-            praesentium expedita architecto eligendi aut voluptas molestias ab, quod fuga sequi
-            error vel!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repudiandae aliquam repellendus sapiente totam recusandae ipsa,
+            deserunt, a velit nulla porro explicabo similique vel laborum
+            corrupti reiciendis! Molestias perspiciatis dolorem dignissimos. Rem
+            reprehenderit officia earum, aspernatur quod itaque, voluptas
+            nesciunt magni dolores facilis id consectetur asperiores recusandae
+            minus sapiente illo aut. Obcaecati enim est quos, aliquam eum
+            molestias dolore libero magni sit rem consectetur magnam labore
+            itaque illum, nulla dignissimos officiis, dolores atque? Consequatur
+            natus, aut blanditiis nemo excepturi voluptate rem dicta labore
+            molestias doloribus. Possimus laborum maxime praesentium expedita
+            architecto eligendi aut voluptas molestias ab, quod fuga sequi error
+            vel!
           </p>
         </div>
         <div className="main__section-description__img">
@@ -84,9 +94,9 @@ const Main = () => {
       </section>
 
       <Footer />
-
-      {/* <Navigate to="/sign-in" /> */}
     </div>
+  ) : (
+    <Navigate to="/sign-in" />
   );
 };
 
