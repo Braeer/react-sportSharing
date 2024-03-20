@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react';
 import Reviews from '../components/reviews';
 import { Navigate } from 'react-router-dom';
@@ -8,6 +9,13 @@ const Main = () => {
   
   const { isAuth, email } = useAuth();
 
+=======
+import React from "react";
+import Reviews from "../components/reviews";
+// import { Navigate } from "react-router-dom";
+import Footer from "../components/Footer";
+const Main = () => {
+>>>>>>> Stashed changes
   return (
     <div>
       <div className="main__title-h1">
@@ -97,6 +105,7 @@ const Main = () => {
       <Footer />
     </div>
   );
+  // <Navigate to="/sign-in" />
 };
 
 export default Main;

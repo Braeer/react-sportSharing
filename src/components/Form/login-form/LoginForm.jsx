@@ -21,7 +21,7 @@ const LoginForm = () => {
             token: user.accessToken,
           })
         );
-        navigate("/");
+        navigate("/user-page");
       })
       .catch(() => alert("Invalid user"));
   };

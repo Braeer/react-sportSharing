@@ -43,7 +43,7 @@ const RegisterForm = () => {
             token: user.accessToken,
           })
         );
-        // navigate("/");
+        navigate("/user-page");
         sendSignInLinkToEmail(auth, email, actionCodeSettings)
           .then(() => {
             // The link was successfully sent. Inform the user.

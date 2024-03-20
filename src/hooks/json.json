@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ferrari 488 GTB",
+    "description": "Итальянский суперкар с превосходной динамикой и элегантным дизайном.",
+    "horsepower": 660,
+    "transmission": "Задний",
+    "wheels": "Pirelli P Zero",
+    "weight": 1.475,
+    "acceleration": 3,
+    "torque": 760
+  },
+  {
+    "name": "Lamborghini Huracan Performante",
+    "description": "Итальянский суперкар с ультралегкой конструкцией и агрессивным дизайном.",
+    "horsepower": 640,
+    "transmission": "Полный",
+    "wheels": "Pirelli Trofeo R",
+    "weight": 1.382,
+    "acceleration": 2.9,
+    "torque": 600
+  },
+  {
+    "name": "Porche 911 Turbo S",
+    "description": "Легендарный немецкий спорткар с комфортабельным салоном и высокой производительностью.",
+    "horsepower": 650,
+    "transmission": "Полный",
+    "wheels": "Michelin Pilot Sport Cup 2",
+    "weight": 1.64,
+    "acceleration": 2.7,
+    "torque": 800
+  },
+  {
+    "name": "McLaren 720S",
+    "description": "Британский гиперкар с инновационным дизайном и мощным двигателем.",
+    "horsepower": 710,
+    "transmission": "Задний",
+    "wheels": "Pirelli P Zero Corsa",
+    "weight": 1.419,
+    "acceleration": 2.9,
+    "torque": 770
+  },
+  {
+    "name": "Chevrolet Corvette Z06",
+    "description": "Американский маслкар с высокой производительностью и доступной ценой.",
+    "horsepower": 650,
+    "transmission": "Задний",
+    "wheels": "Michelin Pilot Super Sport",
+    "weight": 1.598,
+    "acceleration": 3.3,
+    "torque": 881
+  },
+  {
+    "name": "Nissan GT-R Nismo",
+    "description": "Японский спорткар с легендарной историей и выдающейся динамикой.",
+    "horsepower": 600,
+    "transmission": "Полный",
+    "wheels": "Dunlop SP Sport Maxx GT",
+    "weight": 1.74,
+    "acceleration": 3.5,
+    "torque": 652
+  }
+]
