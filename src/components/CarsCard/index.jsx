@@ -11,6 +11,7 @@ const CarsCard = ({
   weight,
   wheels,
   acceleration,
+  image,
 }) => {
   return (
     <>
@@ -21,7 +22,7 @@ const CarsCard = ({
             <h2>Описание машины</h2>
             <p>{description}</p>
             <h2>Характеристики</h2>
-            <ul>
+            <ul className={styles.cars_parametrs}>
               <li>Л.С: {power}</li>
               <li>Привод: {transmission}</li>
               <li>Шины: {wheels}</li>
@@ -30,7 +31,7 @@ const CarsCard = ({
               <li>Крутящий момент: {torque}</li>
             </ul>
           </div>
-          <img src="./img/f1-1384580934.jpg" alt="" />
+          <img src={image} alt="" />
         </div>
         <div className={styles.line}></div>
         <div className={styles.down}>

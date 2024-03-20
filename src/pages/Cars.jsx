@@ -29,6 +29,7 @@ const Cars = () => {
       <h1 className="cars__title">Автомобили</h1>
       {cars.map((obj) => (
         <CarsCard
+          image={obj.imageUrl}
           title={obj.name}
           description={obj.description}
           power={obj.horsepower}
