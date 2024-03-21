@@ -22,13 +22,12 @@
     li {
       padding: 10px;
       border-radius: 10px;
-      background-color: rgba(160, 157, 157, 0.3);
+      background-color: rgba(160, 157, 157, 0.1);
       color: #201d1d;
-      box-shadow: 24px 23px 10px -13px rgba(0, 0, 0, 0.5);
+      box-shadow: 14px 14px 10px -2px rgba(0, 0, 0, 0.5);
 
       transition-property: box-shadow;
       transition-duration: 0.3s;
-      cursor: pointer;
 
       &:hover {
         box-shadow: none;
@@ -41,4 +40,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+// Rent
+.rented {
+  background-color: red;
+}
+
+.not_rented {
+  background-color: green;
 }

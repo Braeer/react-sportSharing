@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./styleCarsCard.module.scss";
 
@@ -13,6 +13,12 @@ const CarsCard = ({
   acceleration,
   image,
 }) => {
+  const [rented, setRented] = useState(false);
+
+  const handleOnrent = () => {
+    setRented(!rented);
+  };
+
   return (
     <>
       <div className={styles.cars}>
@@ -37,7 +43,12 @@ const CarsCard = ({
         <div className={styles.down}>
           <div className={styles.price}>19999₽</div>
           <div className={styles.status}>Свободно</div>
-          <button>Забронировать</button>
+          <button
+            onClick={() => handleOnrent()}
+            className={rented ? styles.not_rented : styles.rented}
+          >
+            Забронировать
+          </button>
         </div>
       </div>
     </>
