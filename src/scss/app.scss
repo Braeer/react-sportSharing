@@ -42,7 +42,21 @@ body {
   @media screen and (max-width: 1000px) {
     h1 {
       line-height: 200px;
-      font-size:calc(250px + 8 * (100vw - 320px) / 880);    }
+      font-size: 250px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 180px;
+      line-height: 140px;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    h1 {
+      font-size: 150px;
+      line-height: 120px;
+    }
   }
 }
 
@@ -241,9 +255,22 @@ body {
       .main__section-about__card {
         width: 100%;
         margin: 20px;
+        padding: 10px;
 
         h2 {
           font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main__section-about {
+    .main__section-about__cards {
+      .main__section-about__card {
+        h2 {
+          font-size: 25px;
         }
       }
     }

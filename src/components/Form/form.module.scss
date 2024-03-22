@@ -5,6 +5,7 @@ $black: rgb(0, 0, 0);
 
 .form_wrapper {
   width: 40vw;
+  min-width: 360px;
   padding: 20px 15px;
 
   display: flex;
@@ -13,9 +14,9 @@ $black: rgb(0, 0, 0);
   align-items: center;
   justify-content: flex-start;
 
-  background-color: rgb(165, 165, 165);
+  // background-color: rgb(165, 165, 165);
 
-  border: 1px solid grey;
+  border: 5px solid $acctent-color;
   border-radius: 10px;
   button {
     margin-top: 20px;
@@ -43,10 +44,11 @@ $black: rgb(0, 0, 0);
     height: 40px;
 
     margin-top: 20px;
-    border: 1px solid white;
+    border: 3px solid $acctent-color;
+    border-radius: 5px;
 
     &::placeholder {
-      color: rgb(228, 179, 32);
+      color: black;
     }
   }
 }

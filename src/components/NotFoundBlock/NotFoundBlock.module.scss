@@ -24,3 +24,20 @@ $card-color: rgb(242, 242, 242);
   margin-top: 20px;
   font-size: 22px;
 }
+
+@media screen and (max-width: 640px) {
+  .root {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .root {
+    padding: 40px;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

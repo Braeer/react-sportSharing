@@ -34,12 +34,15 @@ const CarsCard = ({
 
   const onClickAddCars = (obj) => {
     try {
-      const dataCars = { title: obj };
+      const timer = () => setTimeout(() => {
+        const dataCars = { title: obj };
       if (!(rent.map((el) => el.title).includes(dataCars.title))) {
         axios.post('https://ffefae0dde2f5fa4.mokky.dev/rented-cars', dataCars);
         setRent((prev) => [...prev, dataCars]);
         setIsRented(true);
       }
+      },500)
+      timer()
     } catch (err) {
       console.log(err);
       alert('Не удалось загрузить данные!');
