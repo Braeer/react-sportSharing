@@ -1,12 +1,13 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { removeUser } from "../../redux/slices/userSlice";
-import { useAuth } from "../../hooks/use-auth";
-import style from "./styleHeader.module.scss";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeUser } from '../../redux/slices/userSlice';
+import { useAuth } from '../../hooks/use-auth';
+import style from './styleHeader.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const { isAuth, email } = useAuth();
+  const { isAuth } = useAuth();
+  // const isAuth = true;
   const dispatch = useDispatch();
   return (
     <header>
@@ -27,22 +28,25 @@ const Header = () => {
           </nav>
           <div className={style.authorization}>
             {!isAuth ? (
-              <Link to="/sign-in" className={style.sing_in}>
-                Sing in
-              </Link>
+              <>
+                <Link to="/sign-in" className={style.sing_in}>
+                  Sing in
+                </Link>
+                <Link to="/sign-up" className={style.sing_up}>
+                  Sing up
+                </Link>
+              </>
             ) : (
-              <></>
+              <div className={style.user}>
+                <Link to="/user-page" className={style.asd}>
+                  User
+                </Link>
+                <button className={style.asd} onClick={() => dispatch(removeUser())}>
+                  Log out
+                </button>
+              </div>
             )}
-            <Link to="/sign-up" className={style.sing_up}>
-              Sing up
-            </Link>
-            {isAuth ? (
-              <button onClick={() => dispatch(removeUser())}>
-                LogOut{email}
-              </button>
-            ) : (
-              <></>
-            )}
+            {/* {isAuth ? <button onClick={() => dispatch(removeUser())}>Log out</button> : <></>} */}
           </div>
         </div>
       </div>

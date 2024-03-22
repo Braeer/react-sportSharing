@@ -3,25 +3,21 @@ import CarsCard from "../components/CarsCard";
 import axios from "axios";
 
 const Cars = () => {
-  // try {
-  //   const { data } = axios.get("https://ffefae0dde2f5fa4.mokky.dev/car-items");
-  //   console.log(data);
-  // } catch (err) {
-  //   console.log(err);
-  //   alert("У вас проблемы");
-  // }
-
-  // console.log(axios.get("https://ffefae0dde2f5fa4.mokky.dev/car-items"));
   const [cars, setCars] = React.useState([]);
 
   React.useEffect(() => {
-    const fetchCars = async () => {
-      const { data } = await axios.get(
-        "https://ffefae0dde2f5fa4.mokky.dev/car-items"
-      );
-      setCars(data);
-    };
-    fetchCars();
+    try {
+      const fetchCars = async () => {
+        const { data } = await axios.get(
+          "https://ffefae0dde2f5fa4.mokky.dev/car-items"
+        );
+        setCars(data);
+      };
+      fetchCars();
+    } catch (err) {
+      console.log(err);
+      alert('Не удалось загрузить данные!')
+    }
   }, []);
   console.log(cars);
   return (
