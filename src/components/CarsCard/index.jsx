@@ -75,6 +75,7 @@ const CarsCard = ({
           <div className={styles.price}>19999₽</div>
           <div className={check ? styles.rented : styles.free}>{check ? 'Занят' : 'Свободен'}</div>
           <button onClick={() => onClickAddCars(title)}>Забронировать</button>
+
         </div>
       </div>
     </>

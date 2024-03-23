@@ -44,12 +44,13 @@ $acctent-color: rgb(26, 20, 35);
       padding: 8px;
       margin: 10px;
       border-radius: 10px;
-      background-color: rgba(160, 157, 157, 0.3);
+      background-color: rgba(160, 157, 157, 0.1);
       color: #201d1d;
       // box-shadow: 24px 23px 10px -13px rgba(0, 0, 0, 0.5);
 
       // transition-property: box-shadow;
       // transition-duration: 0.3s;
+
 
       &:hover {
         box-shadow: none;
@@ -107,4 +108,5 @@ $acctent-color: rgb(26, 20, 35);
       color: black;
     }
   }
+
 }
