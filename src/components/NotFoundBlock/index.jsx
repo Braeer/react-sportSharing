@@ -5,9 +5,7 @@ import styles from './NotFoundBlock.module.scss';
 const NotFoundBlock = () => {
   return (
     <div className={styles.root}>
-      <h1>
-        Ничего не найдено
-      </h1>
+      <h1>Ничего <br /> не <br /> найдено</h1>
       <p className={styles.description}>К сожалению данная страница не существует</p>
     </div>
   );

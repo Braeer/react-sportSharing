@@ -1,29 +1,38 @@
 import React from "react";
 import CarsCard from "../components/CarsCard";
+import { useAuth } from "../hooks/use-auth";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
+
 
 const Cars = () => {
-  // try {
-  //   const { data } = axios.get("https://ffefae0dde2f5fa4.mokky.dev/car-items");
-  //   console.log(data);
-  // } catch (err) {
-  //   console.log(err);
-  //   alert("У вас проблемы");
-  // }
-
-  // console.log(axios.get("https://ffefae0dde2f5fa4.mokky.dev/car-items"));
+  const { isAuth } = useAuth();
   const [cars, setCars] = React.useState([]);
 
   React.useEffect(() => {
-    const fetchCars = async () => {
-      const { data } = await axios.get(
-        "https://ffefae0dde2f5fa4.mokky.dev/car-items"
-      );
-      setCars(data);
-    };
-    fetchCars();
+    try {
+      const fetchCars = async () => {
+        const { data } = await axios.get(
+          "https://ffefae0dde2f5fa4.mokky.dev/car-items"
+        );
+        setCars(data);
+      };
+      fetchCars();
+    } catch (err) {
+      console.log(err);
+      alert('Не удалось загрузить данные!')
+    }
   }, []);
   console.log(cars);
+
+  // Включение проверки авторизации
+  // Выключенный на данный момент
+  // if(!isAuth) {
+  //   return (
+  //     <Navigate to="/sign-in" />
+  //   )
+  // }
+
   return (
     <>
       <h1 className="cars__title">Автомобили</h1>
